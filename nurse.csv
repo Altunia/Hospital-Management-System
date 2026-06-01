@@ -1,0 +1,26 @@
+nurse_id,staff_id,shift,department_id,certification
+1,43,Night,13,RN
+2,2,Evening,9,BSN
+3,6,Night,1,RN
+4,42,Night,12,RN
+5,28,Morning,12,BSN
+6,9,Morning,4,RN
+7,30,Night,15,BSN
+8,12,Morning,15,BSN
+9,4,Evening,11,RN
+10,17,Night,3,BSN
+11,25,Evening,13,MSN
+12,21,Evening,7,BSN
+13,14,Night,3,ICU Certified
+14,44,Night,8,RN
+15,39,Morning,7,MSN
+16,22,Morning,15,ICU Certified
+17,40,Morning,6,MSN
+18,18,Night,11,CEN
+19,27,Evening,5,BSN
+20,45,Morning,7,ICU Certified
+21,32,Night,7,BSN
+22,3,Morning,6,MSN
+23,16,Night,4,ICU Certified
+24,1,Morning,11,ICU Certified
+25,24,Morning,14,MSN

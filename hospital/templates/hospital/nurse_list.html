@@ -1,0 +1,59 @@
+{% extends 'hospital/base.html' %}
+
+{% block title %}Nurses - Hospital Management System{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Nurses</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <a href="{% url 'nurse-create' %}" class="btn btn-primary">
+            <i class="bi bi-plus-lg"></i> Add Nurse
+        </a>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Shift</th>
+                        <th>Department</th>
+                        <th>Certification</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for nurse in nurses %}
+                    <tr>
+                        <td>{{ nurse.nurse_id }}</td>
+                        <td>{{ nurse.staff.first_name }} {{ nurse.staff.last_name }}</td>
+                        <td>{{ nurse.shift }}</td>
+                        <td>{{ nurse.department.department_name }}</td>
+                        <td>{{ nurse.certification|default:"N/A" }}</td>
+                        <td>
+                            <a href="{% url 'nurse-detail' nurse.pk %}" class="btn btn-sm btn-info" title="View">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            <a href="{% url 'nurse-update' nurse.pk %}" class="btn btn-sm btn-warning" title="Edit">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+                            <a href="{% url 'nurse-delete' nurse.pk %}" class="btn btn-sm btn-danger" title="Delete">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="6" class="text-center">No nurses found</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

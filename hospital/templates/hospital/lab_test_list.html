@@ -1,0 +1,71 @@
+{% extends 'hospital/base.html' %}
+
+{% block title %}Lab Tests - Hospital Management System{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Lab Tests</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <a href="{% url 'lab-test-create' %}" class="btn btn-primary">
+            <i class="bi bi-plus-lg"></i> Order Lab Test
+        </a>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Patient</th>
+                        <th>Doctor</th>
+                        <th>Test Name</th>
+                        <th>Test Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for lab_test in lab_tests %}
+                    <tr>
+                        <td>{{ lab_test.test_id }}</td>
+                        <td>{{ lab_test.patient.first_name }} {{ lab_test.patient.last_name }}</td>
+                        <td>Dr. {{ lab_test.doctor.first_name }} {{ lab_test.doctor.last_name }}</td>
+                        <td>{{ lab_test.test_name }}</td>
+                        <td>{{ lab_test.test_date }}</td>
+                        <td>
+                            {% if lab_test.status == 'Completed' %}
+                            <span class="badge bg-success">{{ lab_test.status }}</span>
+                            {% elif lab_test.status == 'In Progress' %}
+                            <span class="badge bg-primary">{{ lab_test.status }}</span>
+                            {% elif lab_test.status == 'Cancelled' %}
+                            <span class="badge bg-danger">{{ lab_test.status }}</span>
+                            {% else %}
+                            <span class="badge bg-warning">{{ lab_test.status }}</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            <a href="{% url 'lab-test-detail' lab_test.pk %}" class="btn btn-sm btn-info" title="View">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            <a href="{% url 'lab-test-update' lab_test.pk %}" class="btn btn-sm btn-warning" title="Edit">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+                            <a href="{% url 'lab-test-delete' lab_test.pk %}" class="btn btn-sm btn-danger" title="Delete">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="7" class="text-center">No lab tests found</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

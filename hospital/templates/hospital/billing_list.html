@@ -1,0 +1,71 @@
+{% extends 'hospital/base.html' %}
+
+{% block title %}Billing - Hospital Management System{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Billing</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <a href="{% url 'billing-create' %}" class="btn btn-primary">
+            <i class="bi bi-plus-lg"></i> Create Bill
+        </a>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Patient</th>
+                        <th>Total Amount</th>
+                        <th>Paid Amount</th>
+                        <th>Balance</th>
+                        <th>Status</th>
+                        <th>Bill Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for billing in billings %}
+                    <tr>
+                        <td>{{ billing.bill_id }}</td>
+                        <td>{{ billing.patient.first_name }} {{ billing.patient.last_name }}</td>
+                        <td>${{ billing.total_amount }}</td>
+                        <td>${{ billing.paid_amount }}</td>
+                        <td>${{ billing.total_amount|add:billing.paid_amount|floatformat:2 }}</td>
+                        <td>
+                            {% if billing.payment_status == 'Paid' %}
+                            <span class="badge bg-success">{{ billing.payment_status }}</span>
+                            {% elif billing.payment_status == 'Partial' %}
+                            <span class="badge bg-warning">{{ billing.payment_status }}</span>
+                            {% else %}
+                            <span class="badge bg-danger">{{ billing.payment_status }}</span>
+                            {% endif %}
+                        </td>
+                        <td>{{ billing.bill_date }}</td>
+                        <td>
+                            <a href="{% url 'billing-detail' billing.pk %}" class="btn btn-sm btn-info" title="View">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            <a href="{% url 'billing-update' billing.pk %}" class="btn btn-sm btn-warning" title="Edit">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+                            <a href="{% url 'billing-delete' billing.pk %}" class="btn btn-sm btn-danger" title="Delete">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="8" class="text-center">No billing records found</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

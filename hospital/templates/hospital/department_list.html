@@ -1,0 +1,59 @@
+{% extends 'hospital/base.html' %}
+
+{% block title %}Departments - Hospital Management System{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Departments</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <a href="{% url 'department-create' %}" class="btn btn-primary">
+            <i class="bi bi-plus-lg"></i> Add Department
+        </a>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Location</th>
+                        <th>Head Doctor</th>
+                        <th>Phone</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for department in departments %}
+                    <tr>
+                        <td>{{ department.department_id }}</td>
+                        <td>{{ department.department_name }}</td>
+                        <td>{{ department.location }}</td>
+                        <td>{{ department.head_doctor_id|default:"N/A" }}</td>
+                        <td>{{ department.phone|default:"N/A" }}</td>
+                        <td>
+                            <a href="{% url 'department-detail' department.pk %}" class="btn btn-sm btn-info" title="View">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            <a href="{% url 'department-update' department.pk %}" class="btn btn-sm btn-warning" title="Edit">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+                            <a href="{% url 'department-delete' department.pk %}" class="btn btn-sm btn-danger" title="Delete">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="6" class="text-center">No departments found</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

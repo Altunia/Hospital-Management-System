@@ -1,0 +1,51 @@
+medicine_id,medicine_name,generic_name,category,manufacturer,stock_quantity,unit_price
+1,Paracetamol,Acetaminophen,Analgesic,Getz Pharma,261,73.06
+2,Amoxicillin,Amoxicillin Trihydrate,Antibiotic,GSK,84,355.05
+3,Metformin,Metformin HCl,Antidiabetic,Getz Pharma,161,255.34
+4,Atorvastatin,Atorvastatin Calcium,Statin,Pfizer,80,310.83
+5,Lisinopril,Lisinopril Dihydrate,ACE Inhibitor,Searle,387,246.49
+6,Omeprazole,Omeprazole,Proton Pump Inhibitor,Getz Pharma,322,278.06
+7,Azithromycin,Azithromycin Dihydrate,Antibiotic,Getz Pharma,58,267.06
+8,Ibuprofen,Ibuprofen,NSAID,Novartis,324,488.85
+9,Ciprofloxacin,Ciprofloxacin HCl,Antibiotic,Getz Pharma,307,407.51
+10,Cetirizine,Cetirizine HCl,Antihistamine,Roche,462,470.16
+11,Pantoprazole,Pantoprazole Sodium,PPI,Abbott,104,459.43
+12,Amlodipine,Amlodipine Besylate,Calcium Blocker,Martin Dow,126,124.28
+13,Metoprolol,Metoprolol Succinate,Beta Blocker,Martin Dow,179,408.53
+14,Losartan,Losartan Potassium,ARB,Novartis,457,201.46
+15,Clopidogrel,Clopidogrel Bisulfate,Antiplatelet,Pfizer,257,232.2
+16,Salbutamol,Salbutamol Sulfate,Bronchodilator,GSK,406,116.8
+17,Prednisone,Prednisone,Corticosteroid,Sami Pharma,384,495.88
+18,Furosemide,Furosemide,Diuretic,Getz Pharma,97,205.61
+19,Tramadol,Tramadol HCl,Opioid Analgesic,Roche,332,240.62
+20,Diclofenac,Diclofenac Sodium,NSAID,Getz Pharma,409,89.83
+21,Ceftriaxone,Ceftriaxone Sodium,Antibiotic,Searle,482,219.79
+22,Insulin Glargine,Insulin Glargine,Insulin,Pfizer,339,488.78
+23,Enalapril,Enalapril Maleate,ACE Inhibitor,Sami Pharma,320,459.98
+24,Simvastatin,Simvastatin,Statin,GSK,158,451.13
+25,Esomeprazole,Esomeprazole Magnesium,PPI,Searle,188,28.05
+26,Ranitidine,Ranitidine HCl,H2 Blocker,Sami Pharma,400,463.16
+27,Doxycycline,Doxycycline Hyclate,Antibiotic,Martin Dow,338,330.76
+28,Gabapentin,Gabapentin,Anticonvulsant,Abbott,485,160.67
+29,Sertraline,Sertraline HCl,SSRI,GSK,350,76.37
+30,Alprazolam,Alprazolam,Benzodiazepine,Roche,89,153.14
+31,Levothyroxine,Levothyroxine Sodium,Thyroid Hormone,GSK,340,418.15
+32,Vitamin D3,Cholecalciferol,Supplement,Roche,396,448.78
+33,Folic Acid,Folic Acid,Vitamin,Pfizer,246,379.03
+34,Ferrous Sulfate,Ferrous Sulfate,Iron Supplement,Abbott,454,494.3
+35,Calcium Carbonate,Calcium Carbonate,Mineral,Sami Pharma,306,374.0
+36,Multivitamin,Multivitamin Complex,Supplement,Pfizer,77,53.35
+37,Ondansetron,Ondansetron HCl,Antiemetic,GSK,479,42.63
+38,Metronidazole,Metronidazole,Antiprotozoal,Roche,446,166.56
+39,Clindamycin,Clindamycin HCl,Antibiotic,Novartis,451,496.33
+40,Warfarin,Warfarin Sodium,Anticoagulant,Searle,166,181.13
+41,Heparin,Heparin Sodium,Anticoagulant,Roche,271,96.94
+42,Morphine,Morphine Sulfate,Opioid,Roche,93,387.22
+43,Codeine,Codeine Phosphate,Opioid Analgesic,Novartis,458,126.99
+44,Phenytoin,Phenytoin Sodium,Anticonvulsant,Sami Pharma,92,137.65
+45,Carbamazepine,Carbamazepine,Anticonvulsant,Roche,414,393.03
+46,Haloperidol,Haloperidol,Antipsychotic,Abbott,428,197.86
+47,Diazepam,Diazepam,Benzodiazepine,Pfizer,104,50.3
+48,Risperidone,Risperidone,Antipsychotic,Novartis,277,183.16
+49,Clarithromycin,Clarithromycin,Antibiotic,Novartis,102,70.59
+50,Allopurinol,Allopurinol,Antigout,Abbott,270,227.18

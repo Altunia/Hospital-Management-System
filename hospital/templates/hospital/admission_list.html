@@ -1,0 +1,71 @@
+{% extends 'hospital/base.html' %}
+
+{% block title %}Admissions - Hospital Management System{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Admissions</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <a href="{% url 'admission-create' %}" class="btn btn-primary">
+            <i class="bi bi-plus-lg"></i> New Admission
+        </a>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Patient</th>
+                        <th>Room</th>
+                        <th>Doctor</th>
+                        <th>Admission Date</th>
+                        <th>Discharge Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for admission in admissions %}
+                    <tr>
+                        <td>{{ admission.admission_id }}</td>
+                        <td>{{ admission.patient.first_name }} {{ admission.patient.last_name }}</td>
+                        <td>{{ admission.room.room_number }}</td>
+                        <td>Dr. {{ admission.doctor.first_name }} {{ admission.doctor.last_name }}</td>
+                        <td>{{ admission.admission_date }}</td>
+                        <td>{{ admission.discharge_date|default:"N/A" }}</td>
+                        <td>
+                            {% if admission.status == 'Admitted' %}
+                            <span class="badge bg-primary">{{ admission.status }}</span>
+                            {% elif admission.status == 'Discharged' %}
+                            <span class="badge bg-success">{{ admission.status }}</span>
+                            {% else %}
+                            <span class="badge bg-warning">{{ admission.status }}</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            <a href="{% url 'admission-detail' admission.pk %}" class="btn btn-sm btn-info" title="View">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            <a href="{% url 'admission-update' admission.pk %}" class="btn btn-sm btn-warning" title="Edit">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+                            <a href="{% url 'admission-delete' admission.pk %}" class="btn btn-sm btn-danger" title="Delete">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="8" class="text-center">No admissions found</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

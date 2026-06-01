@@ -1,0 +1,69 @@
+{% extends 'hospital/base.html' %}
+
+{% block title %}Rooms - Hospital Management System{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Rooms</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <a href="{% url 'room-create' %}" class="btn btn-primary">
+            <i class="bi bi-plus-lg"></i> Add Room
+        </a>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Room Number</th>
+                        <th>Type</th>
+                        <th>Department</th>
+                        <th>Status</th>
+                        <th>Price/Day</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for room in rooms %}
+                    <tr>
+                        <td>{{ room.room_id }}</td>
+                        <td>{{ room.room_number }}</td>
+                        <td>{{ room.room_type }}</td>
+                        <td>{{ room.department.department_name }}</td>
+                        <td>
+                            {% if room.status == 'Available' %}
+                            <span class="badge bg-success">{{ room.status }}</span>
+                            {% elif room.status == 'Occupied' %}
+                            <span class="badge bg-danger">{{ room.status }}</span>
+                            {% else %}
+                            <span class="badge bg-warning">{{ room.status }}</span>
+                            {% endif %}
+                        </td>
+                        <td>${{ room.price_per_day }}</td>
+                        <td>
+                            <a href="{% url 'room-detail' room.pk %}" class="btn btn-sm btn-info" title="View">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            <a href="{% url 'room-update' room.pk %}" class="btn btn-sm btn-warning" title="Edit">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+                            <a href="{% url 'room-delete' room.pk %}" class="btn btn-sm btn-danger" title="Delete">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="7" class="text-center">No rooms found</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

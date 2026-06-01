@@ -1,0 +1,61 @@
+{% extends 'hospital/base.html' %}
+
+{% block title %}Prescription Details - Hospital Management System{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Prescription Details</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <a href="{% url 'prescription-detail-create' %}" class="btn btn-primary">
+            <i class="bi bi-plus-lg"></i> Add Prescription Detail
+        </a>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Prescription</th>
+                        <th>Medicine</th>
+                        <th>Dosage</th>
+                        <th>Frequency</th>
+                        <th>Duration</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for detail in prescription_details %}
+                    <tr>
+                        <td>{{ detail.detail_id }}</td>
+                        <td>{{ detail.prescription.prescription_id }}</td>
+                        <td>{{ detail.medicine.medicine_name }}</td>
+                        <td>{{ detail.dosage }}</td>
+                        <td>{{ detail.frequency }}</td>
+                        <td>{{ detail.duration_days }} days</td>
+                        <td>
+                            <a href="{% url 'prescription-detail-detail' detail.pk %}" class="btn btn-sm btn-info" title="View">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            <a href="{% url 'prescription-detail-update' detail.pk %}" class="btn btn-sm btn-warning" title="Edit">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+                            <a href="{% url 'prescription-detail-delete' detail.pk %}" class="btn btn-sm btn-danger" title="Delete">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="7" class="text-center">No prescription details found</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,121 @@
+record_id,patient_id,doctor_id,visit_date,diagnosis,treatment,notes,appointment_id
+1,71,3,2023-07-11,Malaria,Prescribed insulin for 7 days,Follow-up in 2 weeks,128
+2,84,22,2021-10-27,Anemia,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,153
+3,71,9,2024-06-07,Pneumonia,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,192
+4,10,20,2023-08-04,Malaria,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,126
+5,83,23,2021-05-05,Dengue Fever,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,75
+6,42,19,2022-09-20,Pneumonia,Prescribed painkillers for 7 days,Follow-up in 2 weeks,176
+7,14,16,2023-06-12,Malaria,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,117
+8,23,36,2021-06-03,Type 2 Diabetes,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,8
+9,67,18,2021-06-19,Pneumonia,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,174
+10,36,16,2021-08-21,Kidney Stones,Prescribed insulin for 7 days,Follow-up in 2 weeks,184
+11,49,29,2023-06-26,Pneumonia,Prescribed painkillers for 7 days,Follow-up in 2 weeks,5
+12,89,20,2024-12-04,Dengue Fever,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,14
+13,88,21,2024-09-29,Appendicitis,Prescribed insulin for 7 days,Follow-up in 2 weeks,188
+14,91,29,2023-06-19,UTI,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,131
+15,70,33,2023-11-06,Kidney Stones,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,162
+16,45,23,2024-08-14,Kidney Stones,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,120
+17,86,1,2023-08-11,Typhoid,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,51
+18,83,22,2021-05-15,Fracture,Prescribed insulin for 7 days,Follow-up in 2 weeks,133
+19,76,22,2021-07-25,UTI,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,40
+20,28,40,2022-08-08,Kidney Stones,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,186
+21,50,22,2022-01-18,Asthma,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,173
+22,90,8,2024-09-02,Kidney Stones,Prescribed painkillers for 7 days,Follow-up in 2 weeks,90
+23,12,33,2024-08-05,Malaria,Prescribed painkillers for 7 days,Follow-up in 2 weeks,200
+24,44,6,2023-10-31,Asthma,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,130
+25,74,9,2023-12-21,Fracture,Prescribed painkillers for 7 days,Follow-up in 2 weeks,183
+26,20,11,2024-06-19,Hypertension,Prescribed insulin for 7 days,Follow-up in 2 weeks,105
+27,61,33,2021-11-05,Dengue Fever,Prescribed insulin for 7 days,Follow-up in 2 weeks,129
+28,64,28,2021-12-26,Pneumonia,Prescribed insulin for 7 days,Follow-up in 2 weeks,111
+29,23,13,2021-09-28,Gastritis,Prescribed insulin for 7 days,Follow-up in 2 weeks,61
+30,78,12,2024-01-23,Kidney Stones,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,175
+31,2,17,2024-01-04,Pneumonia,Prescribed painkillers for 7 days,Follow-up in 2 weeks,65
+32,73,26,2021-05-23,Dengue Fever,Prescribed insulin for 7 days,Follow-up in 2 weeks,102
+33,79,25,2024-06-23,Malaria,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,49
+34,36,40,2024-07-20,Appendicitis,Prescribed insulin for 7 days,Follow-up in 2 weeks,88
+35,61,13,2023-01-24,Dengue Fever,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,145
+36,72,36,2022-11-07,Anemia,Prescribed insulin for 7 days,Follow-up in 2 weeks,95
+37,40,39,2024-03-11,Gastritis,Prescribed painkillers for 7 days,Follow-up in 2 weeks,13
+38,34,38,2024-09-16,Anemia,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,11
+39,92,19,2023-11-09,Asthma,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,30
+40,20,31,2021-05-18,UTI,Prescribed painkillers for 7 days,Follow-up in 2 weeks,93
+41,81,7,2024-04-06,Kidney Stones,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,165
+42,24,40,2021-12-06,Kidney Stones,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,142
+43,86,28,2021-04-16,Anemia,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,96
+44,9,30,2021-03-17,Fracture,Prescribed insulin for 7 days,Follow-up in 2 weeks,168
+45,17,28,2023-10-27,Malaria,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,196
+46,81,39,2022-05-06,Pneumonia,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,27
+47,15,7,2022-04-26,Type 2 Diabetes,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,70
+48,61,3,2024-07-25,Migraine,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,163
+49,73,14,2021-05-21,Liver Disease,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,78
+50,55,33,2023-01-12,Kidney Stones,Prescribed painkillers for 7 days,Follow-up in 2 weeks,138
+51,80,32,2024-07-04,Gastritis,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,25
+52,4,9,2021-01-31,Anemia,Prescribed painkillers for 7 days,Follow-up in 2 weeks,81
+53,28,33,2021-08-22,Fracture,Prescribed painkillers for 7 days,Follow-up in 2 weeks,107
+54,21,22,2023-04-24,Asthma,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,21
+55,66,15,2021-09-06,Asthma,Prescribed painkillers for 7 days,Follow-up in 2 weeks,190
+56,53,37,2024-10-28,Type 2 Diabetes,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,48
+57,10,9,2022-10-12,COVID-19,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,194
+58,48,36,2021-07-30,Kidney Stones,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,148
+59,71,9,2022-08-13,Pneumonia,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,26
+60,96,6,2023-06-08,Appendicitis,Prescribed insulin for 7 days,Follow-up in 2 weeks,45
+61,70,30,2023-04-27,Kidney Stones,Prescribed insulin for 7 days,Follow-up in 2 weeks,24
+62,70,31,2022-06-03,Gastritis,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,170
+63,89,39,2023-08-21,Dengue Fever,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,9
+64,80,30,2021-05-09,Type 2 Diabetes,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,158
+65,84,5,2021-12-29,Asthma,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,122
+66,31,37,2023-02-24,Appendicitis,Prescribed insulin for 7 days,Follow-up in 2 weeks,37
+67,96,17,2024-04-12,Appendicitis,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,66
+68,81,20,2022-07-17,Malaria,Prescribed insulin for 7 days,Follow-up in 2 weeks,125
+69,31,20,2021-09-07,Appendicitis,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,157
+70,19,39,2024-10-20,Type 2 Diabetes,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,180
+71,3,33,2024-03-23,UTI,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,159
+72,81,3,2022-09-25,Dengue Fever,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,59
+73,19,9,2024-01-12,Liver Disease,Prescribed insulin for 7 days,Follow-up in 2 weeks,80
+74,62,26,2023-05-24,Pneumonia,Prescribed insulin for 7 days,Follow-up in 2 weeks,86
+75,87,37,2024-04-17,Anemia,Prescribed painkillers for 7 days,Follow-up in 2 weeks,17
+76,57,5,2021-06-15,Fracture,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,87
+77,99,40,2021-09-26,Appendicitis,Prescribed insulin for 7 days,Follow-up in 2 weeks,141
+78,75,10,2022-04-21,Anemia,Prescribed painkillers for 7 days,Follow-up in 2 weeks,50
+79,38,23,2023-02-07,Hypertension,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,47
+80,81,21,2021-11-06,UTI,Prescribed painkillers for 7 days,Follow-up in 2 weeks,124
+81,15,30,2021-08-29,Appendicitis,Prescribed insulin for 7 days,Follow-up in 2 weeks,29
+82,51,39,2021-04-23,COVID-19,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,109
+83,9,26,2023-10-05,Migraine,Prescribed insulin for 7 days,Follow-up in 2 weeks,2
+84,64,2,2023-01-10,Fracture,Prescribed painkillers for 7 days,Follow-up in 2 weeks,191
+85,84,10,2023-10-12,Pneumonia,Prescribed insulin for 7 days,Follow-up in 2 weeks,39
+86,31,24,2021-07-23,Dengue Fever,Prescribed painkillers for 7 days,Follow-up in 2 weeks,74
+87,36,3,2024-11-14,Hypertension,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,73
+88,30,33,2024-02-19,Malaria,Prescribed painkillers for 7 days,Follow-up in 2 weeks,112
+89,87,38,2023-09-24,Liver Disease,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,108
+90,13,21,2023-05-25,Dengue Fever,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,92
+91,95,21,2024-05-21,Hypertension,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,16
+92,12,15,2023-07-13,Typhoid,Prescribed painkillers for 7 days,Follow-up in 2 weeks,150
+93,74,33,2022-03-12,Type 2 Diabetes,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,97
+94,50,19,2022-06-01,Liver Disease,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,134
+95,59,20,2022-02-12,Appendicitis,Prescribed insulin for 7 days,Follow-up in 2 weeks,53
+96,1,40,2022-12-24,UTI,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,160
+97,28,9,2022-06-08,UTI,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,110
+98,62,31,2022-05-15,Asthma,Prescribed painkillers for 7 days,Follow-up in 2 weeks,31
+99,38,2,2024-09-10,Pneumonia,Prescribed insulin for 7 days,Follow-up in 2 weeks,55
+100,77,34,2022-08-27,Pneumonia,Prescribed insulin for 7 days,Follow-up in 2 weeks,89
+101,37,5,2024-08-13,Typhoid,Prescribed insulin for 7 days,Follow-up in 2 weeks,127
+102,44,12,2021-04-16,Kidney Stones,Prescribed painkillers for 7 days,Follow-up in 2 weeks,1
+103,11,2,2022-06-09,Asthma,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,155
+104,75,10,2022-12-18,Liver Disease,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,135
+105,27,14,2022-06-26,Migraine,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,7
+106,52,36,2021-03-17,Type 2 Diabetes,Prescribed painkillers for 7 days,Follow-up in 2 weeks,22
+107,54,22,2023-11-06,Pneumonia,Prescribed painkillers for 7 days,Follow-up in 2 weeks,33
+108,100,4,2024-09-04,Dengue Fever,Prescribed insulin for 7 days,Follow-up in 2 weeks,171
+109,6,34,2022-09-10,Fracture,Prescribed painkillers for 7 days,Follow-up in 2 weeks,85
+110,13,24,2021-09-24,Kidney Stones,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,94
+111,30,22,2021-10-30,Liver Disease,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,79
+112,85,28,2023-09-22,Liver Disease,Prescribed painkillers for 7 days,Follow-up in 2 weeks,106
+113,22,40,2023-08-01,COVID-19,Prescribed insulin for 7 days,Follow-up in 2 weeks,116
+114,29,10,2022-06-29,Type 2 Diabetes,Prescribed insulin for 7 days,Follow-up in 2 weeks,12
+115,39,11,2021-11-28,UTI,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,197
+116,58,35,2023-09-19,Malaria,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,35
+117,59,1,2021-10-23,Hypertension,Prescribed painkillers for 7 days,Follow-up in 2 weeks,41
+118,30,27,2022-11-26,Migraine,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,91
+119,73,20,2021-06-24,COVID-19,Prescribed antihypertensives for 7 days,Follow-up in 2 weeks,3
+120,68,14,2023-02-10,Migraine,Prescribed antibiotics for 7 days,Follow-up in 2 weeks,103

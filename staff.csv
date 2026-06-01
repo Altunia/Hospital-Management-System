@@ -1,0 +1,51 @@
+staff_id,first_name,last_name,role,department_id,phone,email,hire_date
+1,William,Reid,Administrator,11,03307053457,maldonadojohn@example.com,2015-12-14
+2,Mary,Green,Medical Coder,9,03972798552,mitchellpaul@example.org,2022-06-12
+3,Michelle,Coffey,Cleaner,6,03933334680,wellsdavid@example.org,2016-01-18
+4,Melissa,Stevens,Pharmacist,11,03903494466,stevenbyrd@example.net,2018-06-25
+5,Justin,Cohen,Pharmacist,13,03691085899,rbrown@example.net,2017-03-26
+6,Linda,Lang,Administrator,1,03544432830,rguerrero@example.org,2015-07-09
+7,Jean,Armstrong,Pharmacist,8,03074466609,matthewreeves@example.net,2021-11-08
+8,Connor,Anderson,Lab Technician,8,03875842824,jessica82@example.net,2019-08-25
+9,Jorge,Carter,Cleaner,4,03513534655,ruizmichelle@example.net,2023-01-21
+10,Kenneth,Brown,Accountant,8,03991738168,derrickgonzalez@example.com,2019-06-25
+11,Lawrence,Brown,Pharmacist,3,03972521752,whill@example.org,2022-05-11
+12,Roy,Woods,Receptionist,15,03927129666,johnsonjames@example.com,2023-06-03
+13,Larry,Garcia,Lab Technician,13,03058300335,gary04@example.com,2019-10-08
+14,Michael,Lopez,Pharmacist,3,03789856257,osmith@example.net,2022-10-21
+15,Nicholas,Bowman,Security,8,03230982150,wheelerbrandon@example.org,2015-07-25
+16,Thomas,Hernandez,Security,4,03001676184,turnerdorothy@example.net,2016-05-12
+17,David,Wilson,IT Support,3,03849926189,jimenezchelsea@example.com,2023-12-27
+18,Renee,Watts,IT Support,11,03835642087,arivera@example.org,2020-12-15
+19,Rebecca,Newman,Security,10,03119721811,shinton@example.com,2018-07-23
+20,Joanna,Davis,IT Support,10,03701204556,smithdevon@example.net,2023-01-25
+21,Ian,Morales,Security,7,03255794155,ynelson@example.net,2021-02-22
+22,Rhonda,Webb,IT Support,15,03762120216,ywhite@example.com,2016-10-13
+23,Bryan,Pena,IT Support,8,03902771670,busherica@example.net,2017-11-27
+24,Dorothy,Wright,Pharmacist,14,03993588916,elizabeth62@example.net,2022-02-24
+25,Karen,Flores,Medical Coder,13,03900287721,tara08@example.org,2023-09-21
+26,Christopher,Jimenez,Security,8,03866317797,david70@example.org,2022-01-11
+27,Dana,Wu,Pharmacist,5,03660880199,diamondbryant@example.com,2019-12-07
+28,Jennifer,Cox,Lab Technician,12,03503758997,wwilson@example.net,2018-03-16
+29,Brandon,Martin,Pharmacist,5,03305548851,lydianewton@example.com,2018-10-07
+30,Makayla,Lee,HR Officer,15,03149331637,daniel60@example.net,2021-01-21
+31,Alyssa,Williams,Lab Technician,3,03917798270,eroberson@example.net,2016-09-09
+32,William,Cruz,Pharmacist,7,03292216995,joshuastuart@example.com,2022-10-13
+33,Jennifer,Walls,Administrator,12,03722698485,jamesweber@example.com,2017-05-26
+34,Timothy,Duncan,Lab Technician,7,03522885158,icraig@example.com,2019-07-28
+35,James,Christensen,HR Officer,9,03608106200,tonyavega@example.org,2020-03-23
+36,Miranda,Stevenson,Accountant,1,03043805719,juliahoffman@example.org,2017-04-27
+37,Alexander,King,Accountant,7,03840666580,ogreer@example.net,2023-08-20
+38,Tonya,Jones,Cleaner,12,03598933472,jillwilson@example.org,2015-03-22
+39,Mark,Mckinney,Cleaner,7,03648422940,billmcfarland@example.net,2020-05-07
+40,Alicia,Krueger,Receptionist,6,03094798515,hartmanerik@example.net,2018-05-08
+41,Kelly,Clements,Accountant,14,03861533555,wbarajas@example.net,2019-09-13
+42,Felicia,Flores,Security,12,03015739930,cruzamber@example.com,2023-03-29
+43,Rachel,Lee,Security,13,03085887704,vaughangary@example.net,2021-10-06
+44,Maria,Johns,Pharmacist,8,03801336138,elucas@example.net,2017-06-17
+45,Laura,Grant,Medical Coder,7,03207501102,rhondarussell@example.com,2020-06-12
+46,Bryan,Reese,Receptionist,7,03665061809,haynescharles@example.net,2018-10-08
+47,Lynn,Johnson,Accountant,12,03144914766,amandataylor@example.com,2016-11-07
+48,David,Smith,IT Support,15,03842450882,fmedina@example.com,2016-06-06
+49,Christina,King,Cleaner,9,03353682223,whitelauren@example.org,2015-04-21
+50,Jessica,Freeman,Accountant,10,03878141413,michael31@example.com,2021-04-30

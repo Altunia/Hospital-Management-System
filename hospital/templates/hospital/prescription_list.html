@@ -1,0 +1,67 @@
+{% extends 'hospital/base.html' %}
+
+{% block title %}Prescriptions - Hospital Management System{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Prescriptions</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <a href="{% url 'prescription-create' %}" class="btn btn-primary">
+            <i class="bi bi-plus-lg"></i> Add Prescription
+        </a>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Patient</th>
+                        <th>Prescribed Date</th>
+                        <th>Expiry Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for prescription in prescriptions %}
+                    <tr>
+                        <td>{{ prescription.prescription_id }}</td>
+                        <td>{{ prescription.patient.first_name }} {{ prescription.patient.last_name }}</td>
+                        <td>{{ prescription.prescribed_date }}</td>
+                        <td>{{ prescription.expiry_date|default:"N/A" }}</td>
+                        <td>
+                            {% if prescription.status == 'Active' %}
+                            <span class="badge bg-success">{{ prescription.status }}</span>
+                            {% elif prescription.status == 'Dispensed' %}
+                            <span class="badge bg-primary">{{ prescription.status }}</span>
+                            {% else %}
+                            <span class="badge bg-danger">{{ prescription.status }}</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            <a href="{% url 'prescription-detail' prescription.pk %}" class="btn btn-sm btn-info" title="View">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            <a href="{% url 'prescription-update' prescription.pk %}" class="btn btn-sm btn-warning" title="Edit">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+                            <a href="{% url 'prescription-delete' prescription.pk %}" class="btn btn-sm btn-danger" title="Delete">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="6" class="text-center">No prescriptions found</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
